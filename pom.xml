@@ -21,6 +21,7 @@
 
 	<modules>
 		<module>test-main</module>
+		<module>test-config</module>
 		<module>test-api</module>
 		<module>test-ui</module>
 		<module>test-model</module>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+  	<meta charset="UTF-8"></meta>
+  	<title>CPIM DO BRASIL - TESTE TÉCNICO</title>
+
+   	<link rel="stylesheet" href="css/style.css"></link> 
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"></link>
+
+</h:head>
+
+<h:body>
+
+<f:metadata>
+    <f:viewParam name="OPERACAO" value="#{usuarioBean.operacao}" />
+</f:metadata>
+
+<header class="ccheader">
+    <h1>Cadastro de Usuário - <h:outputText value = "#{usuarioBean.tituloOperacao}" /></h1>	
+</header>
+<div class="wrapper">
+    <h:form method="post" action="" class="ccform">
+    	<p:growl id="growl" showDetail="true" sticky="true" />  
+    
+	    <div class="ccfield-prepend">
+	        <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+	        <h:inputText class="ccformfield" type="text" placeholder="Nome Completo" required="true" value="#{usuarioBean.usuarioSelecionado.nome}"></h:inputText>
+	    </div>
+	    <div class="ccfield-prepend">
+	        <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+	        <h:inputText class="ccformfield" type="text" placeholder="Email" required="true" value="#{usuarioBean.usuarioSelecionado.email}"></h:inputText>
+	    </div>
+	    <div class="ccfield-prepend">
+	        <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+ 			<p:inputMask class="ccformfield" id="phone" placeholder="Telefone" required="true" value="#{usuarioBean.usuarioSelecionado.telefone}" mask="(99) 9999-9999"/>
+	    </div>
+	     <div class="ccfield-prepend">
+	        <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+	        <h:inputText class="ccformfield" type="text" placeholder="Sexo" required="true" value="#{usuarioBean.usuarioSelecionado.sexo}"></h:inputText>
+	        
+	    </div>
+	    <div class="ccfield-prepend">
+    		<p:commandButton actionListener="#{usuarioBean.salvarUsuarioAction}" action="listarUsuarios" title="Salvar" value="Salvar" update="growl"/>
+	    </div>
+    </h:form>
+</div>
+</h:body>
+</html>

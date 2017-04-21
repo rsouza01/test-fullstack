@@ -8,7 +8,7 @@ Módulos:
  - test-model (Projeto de model, todos os pojos e entidades deverão ficar nesse projeto)
  - test-service (Projeto de services, todos os services deverão ficar nesse projeto)
  - test-ui (Projeto de interface, todas as interfaces deverão ficar na pasta static dentro desse projeto)
- - test-config (Projeto de configuração, todas as configurações do projeto deverá ficar nesse projeto)
+ - test-config (Projeto de configuração, todas as configurações do projeto deverão ficar nesse projeto)
 
 Classe para start do projeto: **com.test.main.TestMain**
 Url para acesso: **http://localhost:5000**

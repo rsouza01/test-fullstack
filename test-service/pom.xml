@@ -9,5 +9,54 @@
 		<artifactId>test</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<dependencyManagement>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-framework-bom</artifactId>
+					<version>4.3.2.RELEASE</version>
+					<type>pom</type>
+					<scope>import</scope>
+				</dependency>
+			</dependencies>
+		</dependencyManagement>	
+	<dependencies>
+	
+	
+		<dependency>
+		    <groupId>javax.ejb</groupId>
+		    <artifactId>ejb-api</artifactId>
+		    <version>3.0</version>
+		</dependency>
+
+
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.10.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+
+	</dependencies>
 	
 </project>

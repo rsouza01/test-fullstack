@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14927345741510" configfile="/test-ui/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf149273500186010" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf149273500186011 pf149273510793913" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="cadastro.xhtml" id="pf149273500186012" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf149273500186011 pf149273510793913" path="/user.xhtml"/>
+  <links id="pf149273500186011" target="pf149273500186012" source="pf149273500186010" outcome="listarUsuarios" redirect="true"/>
+  <links id="pf149273510793913" target="pf149273500186012" source="pf149273500186010" outcome="incluirUsuario" redirect="true"/>
+</pageflow:Pageflow>
